@@ -1,0 +1,9 @@
+**********************
+Method_1: drudn; Set: Set5
+x4 1 baby_drudn_x4.png: PSNR= 33.715914 SSIM= 0.891999
+x4 2 bird_drudn_x4.png: PSNR= 35.011944 SSIM= 0.943637
+x4 3 butterfly_drudn_x4.png: PSNR= 28.550225 SSIM= 0.924356
+x4 4 head_drudn_x4.png: PSNR= 32.933094 SSIM= 0.795503
+x4 5 woman_drudn_x4.png: PSNR= 30.640491 SSIM= 0.912926
+--------Mean--------
+x4: PSNR= 32.170334 SSIM= 0.893684

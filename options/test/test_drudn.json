@@ -1,0 +1,43 @@
+{
+    "name": "drudn",
+    "exec_debug": false,
+    "net_debug": false,
+    "mode": "sr",
+    "scale": 4,
+    "is_train": false,
+    "chop": true,
+    "rgb_range": 255,
+    "save_image": true,
+    "datasets": {
+        "test": {
+            "name": "Set5",
+            "mode": "LRHR",
+            "dataroot_HR": "./eval/HR/Set5/x4",
+            "dataroot_LR": "./eval/LR/LRBI/Set5/x4",
+            "data_type":"img"
+        }
+    },
+    "networks": {
+        "G": {
+            "which_model": "drudn",
+            "mode": "NAC",
+            "num_features": 64,
+            "num_recurs": 12,
+            "in_channels": 3,
+            "out_channels": 3,
+            "group": 1,
+            "num_iterations": 4
+        },
+        "D": {
+            "which_model": "vgg128",
+            "norm_type": "bn",
+            "act_type": "lrelu",
+            "mode": "CNA",
+            "num_features": 64,
+            "in_channels": 3
+        }
+    },
+    "test": {
+        "model_path": "./release"
+    }
+}
