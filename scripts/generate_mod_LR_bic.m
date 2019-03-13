@@ -6,9 +6,9 @@ test_image = {'Set5', 'Set14', 'B100', 'Urban100'};
 
 up_scale = 4;
 for ii = 1 : size(test_image, 2)
-input_path = ['/home/ser606/Documents/neuro/datasets/TestDataSR/',test_image{ii}];
+input_path = ['./TestDataSR/',test_image{ii}];
 
-save_bic_path = strcat(input_path, '_LRBicx', num2str(up_scale));
+save_LR_path = strcat(input_path, '_LRx', num2str(up_scale));
 
 if exist('save_mod_path', 'var')
     if exist(save_mod_path, 'dir')
